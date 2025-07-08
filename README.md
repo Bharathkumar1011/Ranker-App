@@ -5,22 +5,39 @@ A powerful, interactive web application built with Streamlit, leveraging transfo
 
 ---
 
+
+![Streamlit RnkerApp ouput screenshot](https://github.com/user-attachments/assets/c41ca8bf-956e-4864-a2ce-7ab848a84bfd)
+
+
 ## 🚀 Features
 
-- **Upload multiple resumes** in structured `.json` format  
-- **Paste or enter job descriptions** manually  
-- **Weighted scoring algorithm** ranks candidates  
-- **Interactive Top 5 Candidates** view with dropdown details  
-- **Score breakdowns**: Skills, Experience, Education, Keyword Match  
-- **Bar chart visualization** with Matplotlib  
-- **MiniLM-based embedding models** for semantic matching  
-- **Built with Python + Streamlit**  
+<table>
+  <tr>
+    <th colspan="2" style="text-align:left; padding-bottom: 8px;">🔹 <strong>Input</strong></th>
+  </tr>
+  <tr>
+    <td style="padding-right: 40px;">📂 <strong>Upload multiple resumes</strong></td>
+    <td>📝 <strong>Paste job descriptions manually</strong></td>
+  </tr>
+  <tr><td colspan="2" style="height: 20px;"></td></tr> <!-- Spacer row -->
+
+  <tr>
+    <th colspan="2" style="text-align:left; padding-bottom: 8px;">🔸 <strong>Output</strong></th>
+  </tr>
+  <tr>
+    <td style="padding-right: 40px;">🧾 <strong>Scorecards per candidate</strong></td>
+    <td>📊 <strong>Bar chart visualization</strong></td>
+  </tr>
+</table>
+
 
 ---
 
-## 📂 Input Format
+## 📂 Inputs 
 
-1.Upload resume JSON files with this structure:
+## Input-1:Multiple (.Json) files
+### 🧾Example Format: 
+upload resume JSON files with this structure:
 
 ```json
 {
@@ -46,11 +63,12 @@ A powerful, interactive web application built with Streamlit, leveraging transfo
   }
 }
 ```
-## 🧾 Example: Job Description Input (String Format)
+## Input-2: Job Description Input (String Format)
+### 🧾 Example Format: 
 
 User-provided job description in string data type:
 
-```python
+```
 job_description = """Looking for candidate with 3+ years of experience.  
 Must have strong skills in Python (Scikit-learn, TensorFlow, PyTorch), SQL (Spark/Hadoop/ETL), and cloud platforms (AWS/GCP/Azure).  
 Experience in NLP, LLMs, GenAI, statistical analysis, and data visualization (Tableau/Power BI) is preferred.  
@@ -122,7 +140,7 @@ Open your browser and visit: [http://localhost:8501](http://localhost:8501)
 ---
 
 ## 📦 Requirements
-
+- `Python`
 - `streamlit`  
 - `sentence-transformers`  
 - `matplotlib`  
@@ -138,6 +156,15 @@ GitHub: [@Bharathkumar1011](https://github.com/Bharathkumar1011)
 
 ---
 
+## ⚠️ Limitations
+
+- ⚖️ **Model variability**: Changing the selected transformer model may lead to **different scoring behaviors**, as each model interprets semantics differently.  
+- 🧩 **Input sensitivity**: Missing or mislabeled fields (e.g., `Skills`, `Experience`, `Education`) in the JSON resumes can **negatively impact scoring** or cause certain candidates to be undervalued.  
+- 📊 **No fine-tuning yet**: The models are general-purpose and not fine-tuned specifically for resume/job-matching use cases.  
+- 🧠 **Keyword scoring is approximate**: Synonym handling is basic and not exhaustive — some key domain-specific terms may be missed.
+
+
+---
 ## 🌱 Future Enhancements
 
 - Support for PDF parsing  
