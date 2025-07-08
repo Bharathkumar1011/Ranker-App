@@ -131,32 +131,6 @@ Open your browser and visit: [http://localhost:8501](http://localhost:8501)
 
 ---
 
-## 📁 Input/Output Formats
-
-**Input:**  
-Structured JSON resumes with these sections:
-- Contact Information  
-- Education  
-- Experience  
-- Skills  
-
-**Output:**  
-- Expandable score cards for given resumes  
-- Streamlit web interface  
-- Bar chart of scores  
-
----
-
-## 📊 Scoring Breakdown
-
-| Component         | Weight |
-|-------------------|--------|
-| Skills Match      | 40%    |
-| Experience Match  | 40%    |
-| Education Match   | 10%    |
-| Keyword Match     | 10%    |
-
----
 
 ## 👤 Author
 
