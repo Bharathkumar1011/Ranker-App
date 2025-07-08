@@ -17,7 +17,7 @@ A powerful, interactive web application built with Streamlit, leveraging transfo
   </tr>
   <tr>
     <td style="padding-right: 40px;">📂 <strong>Upload multiple resumes</strong></td>
-    <td>📝 <strong>Paste job descriptions manually</strong></td>
+    <td>📝 <strong>Paste job descriptions </strong></td>
   </tr>
   <tr><td colspan="2" style="height: 20px;"></td></tr> <!-- Spacer row -->
 
@@ -32,12 +32,16 @@ A powerful, interactive web application built with Streamlit, leveraging transfo
 
 
 ---
-
 ## 📂 Inputs 
 
-## Input-1:Multiple (.Json) files
-### 🧾Example Format: 
-upload resume JSON files with this structure:
+### 📁 Input-1: Multiple `.json` Resume Files
+
+These structured `.json` files are **automatically generated** using the  
+**AI-Resume-Parser-Structured-Data-Extraction-Tool** from PDFs.
+
+The source PDFs for these resumes are **retrieved** using the  
+**RAG-Powered-Candidate-Retrieval-System-with-Contextual-Reranking-Tool**,  
+which selects relevant resumes from a large dataset via **vector retrieval** and **contextual reranking**.
 
 ```json
 {
@@ -75,7 +79,7 @@ Experience in NLP, LLMs, GenAI, statistical analysis, and data visualization (Ta
 Remote or based in Mumbai, Bangalore, or Pune."""
 ```
 
-## 📂Output
+## 📂Outputs
 ### 🖼️ App Screenshot
 
 Here’s what the Resume Ranking System looks like in action:
@@ -97,8 +101,11 @@ Here’s what the Resume Ranking System looks like in action:
    | Education Match       | 10%    |
    | Keyword Match from JD | 10%    |
 
-4. **Transformer embeddings** (e.g., MiniLM) compute semantic similarity between resumes and the job description.  
-5. **All given candidates** are ranked and visualized with score breakdowns.
+   > 🛠️ **Note:** These weights are fully customizable.  
+                   Users can adjust them based on their specific hiring priorities to influence the final scoring output.
+
+5. **Transformer embeddings** (e.g., MiniLM) compute semantic similarity between resumes and the job description.  
+6. **All given candidates** are ranked and visualized with score breakdowns.
 
 ---
 
