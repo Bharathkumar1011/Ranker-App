@@ -35,6 +35,7 @@ A powerful, interactive web application built with Streamlit, leveraging transfo
 ## 📂 Inputs 
 
 ### 📁 Input-1: Multiple `.json` Resume Files
+### 🧾 Example Format: 
 
 These structured `.json` files are **automatically generated** using the  
 **AI-Resume-Parser-Structured-Data-Extraction-Tool** from PDFs.
