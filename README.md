@@ -20,7 +20,7 @@ A powerful, interactive web application built with Streamlit, leveraging transfo
 
 ## 📂 Input Format
 
-Upload resume JSON files with this structure:
+1.Upload resume JSON files with this structure:
 
 ```json
 {
@@ -46,6 +46,23 @@ Upload resume JSON files with this structure:
   }
 }
 ```
+## 🧾 Example: Job Description Input (String Format)
+
+User-provided job description in string data type:
+
+```python
+job_description = """Looking for candidate with 3+ years of experience.  
+Must have strong skills in Python (Scikit-learn, TensorFlow, PyTorch), SQL (Spark/Hadoop/ETL), and cloud platforms (AWS/GCP/Azure).  
+Experience in NLP, LLMs, GenAI, statistical analysis, and data visualization (Tableau/Power BI) is preferred.  
+Remote or based in Mumbai, Bangalore, or Pune."""
+```
+
+## 📂Output
+### 🖼️ App Screenshot
+
+Here’s what the Resume Ranking System looks like in action:
+
+![Streamlit RnkerApp ouput screenshot](https://github.com/user-attachments/assets/c41ca8bf-956e-4864-a2ce-7ab848a84bfd)
 
 ---
 
@@ -63,7 +80,7 @@ Upload resume JSON files with this structure:
    | Keyword Match from JD | 10%    |
 
 4. **Transformer embeddings** (e.g., MiniLM) compute semantic similarity between resumes and the job description.  
-5. **Top 5 candidates** are ranked and visualized with score breakdowns.
+5. **All given candidates** are ranked and visualized with score breakdowns.
 
 ---
 
@@ -124,7 +141,7 @@ Structured JSON resumes with these sections:
 - Skills  
 
 **Output:**  
-- Ranked JSON of top candidates  
+- Expandable score cards for given resumes  
 - Streamlit web interface  
 - Bar chart of scores  
 
