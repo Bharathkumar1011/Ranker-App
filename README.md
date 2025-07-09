@@ -123,8 +123,8 @@ Here’s what the Resume Ranking System looks like in action:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/Bharathkumar1011/Ranker-stResume-Scoring-Engine-Match-Candidates-with-Job-Descriptionsreamlit.git
-cd Ranker-stResume-Scoring-Engine-Match-Candidates-with-Job-Descriptionsreamlit
+git clone https://github.com/Bharathkumar1011/Resume-Scoring-Engine-Match-Candidates-with-Job-Description.git
+cd Resume-Scoring-Engine-Match-Candidates-with-Job-Description
 ```
 
 ### 2. Install Requirements
